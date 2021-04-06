@@ -19,7 +19,7 @@ class GradientBox extends StatelessWidget {
           colors: colors,
           begin: begin,
           end: end,
-          stops: [0, 1],
+          stops: [1, 1],
         ),
       ),
       child: SizedBox.expand(),
