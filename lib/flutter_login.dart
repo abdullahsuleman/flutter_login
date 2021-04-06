@@ -609,13 +609,13 @@ class _FlutterLoginState extends State<FlutterLogin>
         ),
       ],
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.black,
         body: Stack(
           children: <Widget>[
             GradientBox(
               colors: [
-                loginTheme.pageColorLight ?? theme.primaryColor,
-                loginTheme.pageColorDark ?? theme.primaryColorDark,
+                loginTheme.pageColorLight ?? Colors.red,
+                loginTheme.pageColorDark ?? Colors.red,
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
