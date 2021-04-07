@@ -612,6 +612,10 @@ class _FlutterLoginState extends State<FlutterLogin>
         backgroundColor: loginTheme.primaryColor,
         body: Stack(
           children: <Widget>[
+            Container(
+              alignment: Alignment.topCenter,
+              child: Image(image: AssetImage('assets/images/login_footer_car.png'), width: MediaQuery.of(context).size.width*0.7),
+            ),
             GradientBox(
               colors: [
                 loginTheme.pageColorLight ?? loginTheme.primaryColor,
@@ -652,10 +656,6 @@ class _FlutterLoginState extends State<FlutterLogin>
                   ],
                 ),
               ),
-            ),
-            Container(
-              alignment: Alignment.topCenter,
-              child: Image(image: AssetImage('assets/images/login_footer_car.png'), width: MediaQuery.of(context).size.width*0.7),
             ),
             if (!kReleaseMode && widget.showDebugButtons)
               _buildDebugAnimationButtons(),
