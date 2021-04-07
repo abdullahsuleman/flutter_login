@@ -29,9 +29,9 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   assets:
-  - assets/images/login_footer_car.png
-  - assets/images/ecorp.png
-  - assets/images/login_footer_car.png
+    - assets/images/login_footer_car.png
+    - assets/images/ecorp.png
+    - assets/images/login_footer_car.png
   #  - assets/images/placeholder-logo.png
   #
   # For details regarding assets in packages, see

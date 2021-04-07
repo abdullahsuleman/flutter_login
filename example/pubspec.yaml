@@ -25,10 +25,10 @@ flutter:
   uses-material-design: true
 
   assets:
-  - assets/images/login_footer_car.png
-  - assets/images/ecorp.png
-  - assets/images/ecorp-lightblue.png
-  - assets/images/ecorp-lightgreen.png
+    - assets/images/login_footer_car.png
+    - assets/images/ecorp.png
+    - assets/images/ecorp-lightblue.png
+    - assets/images/ecorp-lightgreen.png
 
   fonts:
     - family: OpenSans
