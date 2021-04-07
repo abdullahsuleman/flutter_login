@@ -655,7 +655,7 @@ class _FlutterLoginState extends State<FlutterLogin>
             ),
             if (!kReleaseMode && widget.showDebugButtons)
               _buildDebugAnimationButtons(),
-            Image(image: AssetImage('assets/images/login_footer_car.png')),
+            Image(image: AssetImage('assets/login_footer_car.png')),
           ],
         ),
       ),
