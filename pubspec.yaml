@@ -28,9 +28,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
-  # To add assets to your package, add an assets section, like this:
   assets:
+    - assets/images/login_footer_car.png
     - assets/images/ecorp.png
   #  - assets/images/placeholder-logo.png
   #
