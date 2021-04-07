@@ -654,7 +654,7 @@ class _FlutterLoginState extends State<FlutterLogin>
               ),
             ),
             Container(
-              alignment: Alignment.bottomCenter,
+              alignment: Alignment.topCenter,
               child: Image(image: AssetImage('assets/images/login_footer_car.png'), width: MediaQuery.of(context).size.width*0.7),
             ),
             if (!kReleaseMode && widget.showDebugButtons)
