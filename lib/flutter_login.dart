@@ -652,15 +652,17 @@ class _FlutterLoginState extends State<FlutterLogin>
           children: <Widget>[
             GradientBox(
               colors: [
-                loginTheme.pageColorLight ?? loginTheme.primaryColor,
-                loginTheme.pageColorDark ?? loginTheme.primaryColor,
+                loginTheme.pageColorLight ?? loginTheme.primaryColor!,
+                loginTheme.pageColorDark ?? loginTheme.primaryColor!,
               ],
               begin: Alignment.topCenter,
               end: Alignment.center,
             ),
             Container(
               alignment: Alignment.bottomCenter,
-              child: Image(image: AssetImage('assets/images/login_footer_car.png'), width: MediaQuery.of(context).size.width*0.7),
+              child: Image(
+                  image: AssetImage('assets/images/login_footer_car.png'),
+                  width: MediaQuery.of(context).size.width * 0.7),
             ),
             SingleChildScrollView(
               child: Theme(
