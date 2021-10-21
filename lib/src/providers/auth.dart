@@ -6,17 +6,17 @@ import '../models/login_data.dart';
 enum AuthMode { Signup, Login }
 
 /// The result is an error message, callback successes if message is null
-typedef AuthCallback = Future<String> Function(LoginData);
+typedef AuthCallback = Future<String?>? Function(LoginData);
 
 /// The result is an error message, callback successes if message is null
-typedef ProviderAuthCallback = Future<String> Function();
+typedef ProviderAuthCallback = Future<String?>? Function();
 
 /// The result is an error message, callback successes if message is null
-typedef RecoverCallback = Future<String> Function(String);
+typedef RecoverCallback = Future<String?>? Function(String);
 
 class Auth with ChangeNotifier {
   Auth({
-    this.loginProviders,
+    this.loginProviders = const [],
     this.onLogin,
     this.onSignup,
     this.onRecoverPassword,
@@ -27,9 +27,9 @@ class Auth with ChangeNotifier {
         _password = password,
         _confirmPassword = confirmPassword;
 
-  final AuthCallback onLogin;
-  final AuthCallback onSignup;
-  final RecoverCallback onRecoverPassword;
+  final AuthCallback? onLogin;
+  final AuthCallback? onSignup;
+  final RecoverCallback? onRecoverPassword;
   final List<LoginProvider> loginProviders;
 
   AuthMode _mode = AuthMode.Login;
