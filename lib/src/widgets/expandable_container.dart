@@ -6,7 +6,7 @@ enum ExpandableContainerState {
 }
 
 class ExpandableContainer extends StatefulWidget {
-  ExpandableContainer({
+  const ExpandableContainer({
     Key? key,
     required this.child,
     required this.controller,
@@ -32,7 +32,7 @@ class ExpandableContainer extends StatefulWidget {
   final ExpandableContainerState initialState;
 
   @override
-  _ExpandableContainerState createState() => _ExpandableContainerState();
+  State<ExpandableContainer> createState() => _ExpandableContainerState();
 }
 
 class _ExpandableContainerState extends State<ExpandableContainer> {
